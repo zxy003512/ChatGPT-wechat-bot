@@ -11,15 +11,15 @@ const clientOptions = {
     model: "gpt-3.5-turbo",
     // I'm overriding the temperature to 0 here for demonstration purposes, but you shouldn't need to override this
     // for normal usage.
-    temperature: 0,
+    temperature: 1,
     // Set max_tokens here to override the default max_tokens of 1000 for the completion.
-    // max_tokens: 1000,
+     max_tokens: 3500,
   },
   // (Optional) Davinci models have a max context length of 4097 tokens, but you may need to change this for other models.
-  // maxContextTokens: 4097,
+   maxContextTokens: 4090,
   // (Optional) You might want to lower this to save money if using a paid model like `text-davinci-003`.
   // Earlier messages will be dropped until the prompt is within the limit.
-  // maxPromptTokens: 3097,
+   maxPromptTokens:500 ,
   // (Optional) Set custom instructions instead of "You are ChatGPT...".
   // promptPrefix: 'You are Bob, a cowboy in Western times...',
   // (Optional) Set a custom name for the user
